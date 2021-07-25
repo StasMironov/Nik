@@ -12,7 +12,7 @@
     "eslint-fix": "eslint ./src/js/** --fix"
   },
   "keywords": [],
-  "author": "Denys Vykhrystiuk",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
