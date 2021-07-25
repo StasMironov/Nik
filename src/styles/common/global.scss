@@ -1,0 +1,177 @@
+@import "../../local_modules/normalize.css/normalize";
+@import "../utils/color.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --wScroll: 0px;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0 calc(var(--wScroll) - (100vw - 100%)) 0 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: normal;
+    // overflow: hidden;
+    font-size: 16px;
+    line-height: 1.56;
+    background-color: $black-1;
+    letter-spacing: -0.4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    @media(max-width: 620px) {
+        font-size: 14px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    position: relative;
+    z-index: 300;
+    flex: 1 0 auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.container {
+    max-width: 1292px;
+    width: 100%;
+    margin: auto;
+    padding: 0 60px;
+
+    @media(max-width: 1024px) {
+        padding: 0 20px;
+    }
+
+    &--full {
+        max-width: 1920px;
+    }
+
+    &--short {
+        max-width: 1140px;
+    }
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.title-1 {
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+
+    @media(max-width: 1024px) {
+        font-size: 40px;
+    }
+
+    @media(max-width: 620px) {
+        font-size: 38px;
+    }
+}
+
+.title-2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+
+    @media(max-width: 1024px) {
+        font-size: 38px;
+    }
+
+    @media(max-width: 620px) {
+        font-size: 34px;
+    }
+}
+
+.title-3 {
+    margin: 0;
+   font-size: 46px;
+   font-weight: 700;
+   letter-spacing: -1px;
+
+   @media(max-width: 1024px) {
+        font-size: 36px;
+    }
+
+    @media(max-width: 620px) {
+        font-size: 30px;
+    }
+}
+
+.title-4 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+    @media(max-width: 1024px) {
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+
+    @media(max-width: 620px) {
+        font-size: 28px;
+    }
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+
+#canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $black-1;
+}
+
+p {
+    margin: 0;
+}

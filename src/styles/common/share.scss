@@ -1,0 +1,53 @@
+.share {
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        &:hover {
+            .icon {
+                fill: $green-1;
+            }
+        }
+
+        .icon {
+            fill: white;
+        }
+
+        &--fb {
+            .icon {
+                width: 12px;
+            }
+        }
+
+        &--tw {
+            .icon {
+                width: 19px;
+            }
+        }
+
+        &--in {
+            .icon {
+                width: 24px;
+            }
+        }
+
+        &--g {
+            .icon {
+                width: 18px;
+            }
+        }
+
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+}

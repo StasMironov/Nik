@@ -1,0 +1,14 @@
+.call
+    .call__title.title-4 Давайте оставаться на связи 
+    .call__quote 
+        | Вы можете отправить электронное письмо на почту 
+        a(href="mailto:mr.nikolay.b@mail.ru") mr.nikolay.b@mail.ru 
+        | или&nbsp;оставить заявку на обратную связь ниже
+    form.call__form
+        .call__field 
+            input(type="text" name="Имя" placeholder="Имя" autocomplete="off")
+        .call__field 
+            input(type="text" name="email" placeholder="Email" autocomplete="off")
+        .call__field 
+            input(type="text" name="message" placeholder="Сообщение" autocomplete="off")
+        button.btn.btn--green.btn--w477(type="submit") Отправить

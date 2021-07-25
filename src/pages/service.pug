@@ -1,0 +1,64 @@
+extends common/layout
+
+block content
+    main.main
+        .service
+            .service__container.container.container--short
+                h1.service__title.title-1 Услуги
+                .service__quote В рамках спецификации современных стандартов, явные признаки победы институционализации могут быть указаны как претенденты на роль ключевых факторов.
+                .service__items 
+                    .service__item.service__item--ios
+                        .service__top
+                            .service__icon 
+                                +icon("ic-apple")
+                        .service__content
+                            .service__ref iOS-приложение
+                            .service__info Как правило, пользователи iOS-устройств являются более платежеспособными клиентами. Мобильное приложение под их устройства смогут повысить Ваши продажи и дадут преимущество перед конкурентами.
+                        .service__bottom
+                            .service__price 75 000 ₽
+                            a.btn.btn--w167.js-btn-call(href="javascript:void(0);") Начать работу
+                    .service__item.service__item--android
+                        .service__top
+                            .service__icon 
+                                +icon("ic-android")
+                        .service__content
+                            .service__ref Android-приложение
+                            .service__info Система Android является самой популярной операционной системой для мобильных устройств в мире. Она занимает 70% мобильного рынка и 30% рынка всех устройств, которые имеют выход в интернет.
+                        .service__bottom
+                            .service__price 75 000 ₽
+                            a.btn.btn--w167.js-btn-call(href="javascript:void(0);") Начать работу
+                    .service__item.service__item--ios_android
+                        .service__top
+                            .service__icon.service__icon--apple 
+                                +icon("ic-apple")
+                            .service__icon.service__icon--plus 
+                                +icon("ic-plus")
+                            .service__icon.service__icon--android 
+                                +icon("ic-android")
+                        .service__content
+                            .service__ref iOS + Android-приложение
+                            .service__info Чтобы повысить спрос на Ваши услуги нужно использовать все возможности мобильных устройств по максимому. Имея приложение сразу на двух платформах, Вы охватите больший процент потенциальных клиентов.
+                        .service__bottom
+                            .service__price 100 000 ₽
+                            a.btn.btn--w167.js-btn-call(href="javascript:void(0);") Начать работу
+                    .service__item.service__item--landing
+                        .service__top
+                            .service__icon 
+                                +icon("ic-landing")
+                        .service__content
+                            .service__ref Лендинг
+                            .service__info Формат лендинга отлично подходит, если Вам необходимо быстро, четко и доступно рассказать про свой товар или услугу, а также обратить внимание клиента на конкретные преимущества Вашего продукта перед конкурентами
+                        .service__bottom
+                            .service__price 15 000 ₽
+                            a.btn.btn--w167.js-btn-call(href="javascript:void(0);") Начать работу
+                    .service__item.service__item--shop
+                        .service__top
+                            .service__icon 
+                                +icon("ic-shop")
+                        .service__content
+                            .service__ref Интернет-магазин
+                            .service__info В современном мире интернет-магазин это очень прибыльный вариант бизнеса. Вам не нужно платить за аренду помещения, не нужен персонал для работы с клиентами, и продажа товара полностью автоматизирована.
+                        .service__bottom
+                            .service__price 40 000 ₽
+                            a.btn.btn--w167.js-btn-call(href="javascript:void(0);") Начать работу
+                

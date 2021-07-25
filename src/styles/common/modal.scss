@@ -1,0 +1,83 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 500;
+
+    &__backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 400;
+    }
+
+    &__body {
+        position: fixed;
+        top: 50%;
+        right: 20%;
+        left: 20%;
+        padding: 60px 40px 70px;
+        background-color: $black-1;
+        overflow: auto;
+        max-width: 679px;
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        z-index: 500;
+
+        .call {
+            &__form {
+                max-width: 477px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border: none;
+        right: 15px;
+        top: 21px;
+        background-color: transparent;
+        cursor: pointer;
+        transform-origin: center;
+        transition: .3s ease-in-out;
+
+        &:after, &:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 3px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        &:after {
+            transform: rotate(45deg);
+        }
+
+        &:before {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+
+        &:hover:before,
+        &:hover:after {
+            background-color: $green-1;
+        }
+    }
+}

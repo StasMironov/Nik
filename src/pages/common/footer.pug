@@ -1,0 +1,32 @@
+footer.footer
+    .footer__container.container.container--full
+        .share
+            .share__items 
+                a.share__item.share__item--fb(href="javascript:void(0);")
+                    +icon('ic-fb')
+                a.share__item.share__item--tw(href="javascript:void(0);")
+                    +icon('ic-twitter')
+                a.share__item.share__item--in(href="javascript:void(0);") 
+                    +icon('ic-in')
+                a.share__item.share__item--g(href="javascript:void(0);")
+                    +icon('ic-g')
+        .footer__quote © 2020 Umbrella Developers
+    
+.modal.js-modal-call
+    .modal__backdrop.js-overlay
+    .modal__body 
+        button.modal__close.js-modal-close
+        .call
+            .call__title.title-4 Хотите сотрудничать?
+            .call__quote 
+                | Вы можете отправить электронное письмо на почту 
+                a(href="mailto:mr.nikolay.b@mail.ru") mr.nikolay.b@mail.ru 
+                | или&nbsp;оставить заявку на обратную связь ниже
+            form.call__form
+                .call__field 
+                    input(type="text" name="Имя" placeholder="Имя" autocomplete="off")
+                .call__field 
+                    input(type="text" name="email" placeholder="Email" autocomplete="off")
+                .call__field 
+                    input(type="text" name="message" placeholder="Сообщение" autocomplete="off")
+                button.btn.btn--green.btn--w477(type="submit") Отправить

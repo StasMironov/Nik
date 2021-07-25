@@ -1,0 +1,69 @@
+extends common/layout
+
+block content
+    main.main
+        .about-master
+            .about-master__container.container.container--short 
+                .about-master__grid
+                    .about-master__left
+                        .about-master__title.title-1 Я - Николай Буркин
+                        .about-master__box 
+                            p Действия представителей оппозиции, инициированные исключительно синтетически, разоблачены. 
+                            p Равным образом, выбранный нами инновационный путь создаёт предпосылки для первоочередных требований. Банальные, но неопровержимые выводы, а также некоторые особенности внутренней политики формируют. 
+                    .about-master__right
+                        .about-master__pic
+                            img(src="img/about/img.png", alt="autor")
+        .about-exp
+            .about-exp__container.container.container--short
+                .about-exp__items
+                    .about-exp__item.about-exp__item--project
+                        .about-exp__pic
+                            +icon('ic-project')
+                        .about-exp__text Проектов
+                    .about-exp__item.about-exp__item--cup
+                        .about-exp__pic
+                            +icon('ic-coffe')
+                        .about-exp__text Чашек кофе
+                    .about-exp__item.about-exp__item--client
+                        .about-exp__pic
+                            +icon('ic-client')
+                        .about-exp__text Клиентов
+                    .about-exp__item.about-exp__item--year
+                        .about-exp__pic
+                            +icon('ic-year') 
+                        .about-exp__text Лет в работе
+        .about-step
+            .about-step__container.container.container--short 
+                .about-step__title.title-2 Опыт работы
+                .about-step__items
+                    .about-step__item
+                        .about-step__year 3 года 4 месяца
+                        .about-step__article Июль 2016 - октябрь 2019
+                        .about-step__info Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса, инициированные исключительно синтетически, подвергнуты целой серии независимых исследований. Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса являются только методом политического участия и подвергнуты целой серии независимых исследований.
+                    .about-step__item
+                        .about-step__year 8 месяцев
+                        .about-step__article Ноябрь 2019 - июнь 2020
+                        .about-step__info С другой стороны, понимание данной сути ресурсосберегающих технологий предопределяет высокую востребованность укрепления моральных ценностей. Предварительные выводы: современная методология разработки однозначно определяет каждого участника.
+                    .about-step__item
+                        .about-step__year 1 год 11 месяцев
+                        .about-step__article Февраль 2019 - настоящее время
+                        .about-step__info Современные технологии достигли такого уровня, что высокотехнологичная концепция общественного уклада играет важную роль в формировании экспериментов, поражающих по своей масштабности и грандиозности. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут своевременно верифицированы. Господа, понимание сути ресурсосберегающих технологий способствует повышению качества экономической целесообразности принимаемых решений! Учитывая ключевые сценарии поведения, разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает актуальность форм воздействия.
+                    .about-step__item
+                        .about-step__year 4 месяца
+                        .about-step__article Сентябрь 2020 - настоящее время
+                        .about-step__info Принимая во внимание показатели успешности, базовый вектор развития создаёт предпосылки для стандартных подходов. Но представители современных социальных резервов, которые представляют собой яркий пример континентально- европейского типа политической культуры, будут ассоциативно распределены по отраслям.
+        .call.call--project
+            .call__container.container.container--short
+                .call__title.title-4 Давайте оставаться на связи 
+                .call__quote 
+                    | Вы можете отправить электронное письмо на почту 
+                    a(href="mailto:mr.nikolay.b@mail.ru") mr.nikolay.b@mail.ru 
+                    | или&nbsp;оставить заявку на обратную связь ниже
+                form.call__form
+                    .call__field 
+                        input(type="text" name="Имя" placeholder="Имя" autocomplete="off")
+                    .call__field 
+                        input(type="text" name="email" placeholder="Email" autocomplete="off")
+                    .call__field 
+                        input(type="text" name="message" placeholder="Сообщение" autocomplete="off")
+                    button.btn.btn--green.btn--w477(type="submit") Отправить

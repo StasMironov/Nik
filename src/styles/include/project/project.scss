@@ -1,0 +1,108 @@
+.project {
+    padding-bottom: 40px;
+
+    @media(max-width: 620px) {
+        padding-bottom: 31px;
+    }
+    
+    &__wrp {
+        display: flex;
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        @media(max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__left {
+        margin-right: 50px;
+        margin-right: 50px;
+        max-width: 246px;
+
+        @media(max-width: 1024px) {
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        .project__title {
+            margin: 0;
+        }
+    }
+
+    &__right {
+        max-width: 638px;
+        width: 100%;
+
+        @media(max-width: 1024px) {
+            max-width: 630px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 0;
+            line-height: 1.8;
+
+            @media(max-width: 1024px) {
+                font-size: 16px;
+                line-height: 1.9;
+            }
+
+            @media(max-width: 620px) {
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            &:not(:first-child){
+                margin-top: 24px;
+
+                @media(max-width: 1024px) {
+                    margin-top: 16px;
+                }
+
+                @media(max-width: 620px) {
+                    margin-top: 13px;
+                }
+            }
+        }
+
+        .project__b {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.5;
+
+            @media(max-width: 1024px) {
+                font-size: 18px;
+                max-width: 542px;
+                margin: 24px auto 0;
+                line-height: 1.7;
+            }
+
+            @media(max-width: 620px) {
+                font-size: 16px;
+                margin: 17px auto 0;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    &__container {
+        padding-top: 101px;
+
+        @media(max-width: 1024px) {
+            padding-top: 75px;
+        }
+
+        @media(max-width: 620px) {
+            padding-top: 80px;
+        }
+    }
+
+    &__title {
+        line-height: 1.2;
+    }
+}

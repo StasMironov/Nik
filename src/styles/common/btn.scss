@@ -1,0 +1,43 @@
+.btn {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    height: 54px;
+    font-size: 16px;
+
+    &:hover {
+        border-color: white;
+        background-color: white;
+        color: $black-1;
+    }
+
+    &--w199 {
+        width: 199px;
+    }
+
+    &--w477 {
+        width: 477px;
+    }
+
+    &--w167 {
+        width: 167px;
+    }
+
+    &--green {
+        border-color: $green-1;
+        color: $green-1;
+        background-color: transparent;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $green-1;
+            border-color: $green-1;
+            color: $black-1;
+        }
+    }
+}

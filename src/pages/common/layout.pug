@@ -1,0 +1,25 @@
+include ../../mixins/mixins
+
+doctype html
+html(lang="ru")
+    block head
+        head
+            meta(charset="utf-8")
+            title Title your site
+            meta(content="width=device-width, initial-scale=1" name="viewport")
+            meta(content="ie=edge" http-equiv="x-ua-compatible")
+            link(rel="stylesheet" href="css/style.min.css")
+    body
+        canvas#canvas
+        block header
+            include header
+        block content
+        block footer
+            include footer
+        block scripts
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+            script(src='js/main.min.js')

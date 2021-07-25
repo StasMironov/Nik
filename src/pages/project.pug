@@ -1,0 +1,82 @@
+extends common/layout
+
+block content
+    main.main
+        .project
+            .project-bildboard
+                .project-bildboard__pic
+                    picture 
+                        source(srcset="img/projects/img1.jpg" media="(min-width: 1025px)")
+                        source(srcset="img/projects/img2.jpg" media="(min-width: 621px)")
+                        source(srcset="img/projects/img3.jpg" media="(min-width: 319px)")
+                        img(src="mdn-logo-narrow.png" alt="MDN")
+                .project-bildboard__container.container.container--short
+                    .project-bildboard__quote Мобильная разработка
+                    h1.project-bildboard__title.title-1 Кинотеатр Jazz Cinema
+                    .project-bildboard__cover
+                        .project-bildboard__items
+                            .project-bildboard__item
+                                .project-bildboard__txt.project-bildboard__txt--subtitle Клиент
+                                .project-bildboard__txt.project-bildboard__txt--title Suendor
+                            .project-bildboard__item
+                                .project-bildboard__txt.project-bildboard__txt--subtitle Регион
+                                .project-bildboard__txt.project-bildboard__txt--title Россия
+                            .project-bildboard__item
+                                .project-bildboard__txt.project-bildboard__txt--subtitle Год
+                                .project-bildboard__txt.project-bildboard__txt--title 2019
+            .project__container.container.container--short
+                .project__wrp
+                    .project__left
+                        h2.project__title.title-2 Описание проекта
+                    .project__right
+                        p.project__b В настоящее время я разрабатываю мобильные приложения на фреймворке Xamarin для кроссплатформенной разработки Android и iOS. 
+                        p Но также, господа, сплочённость команды профессионалов в значительной степени обусловливает важность существующих финансовых и административных условий. Стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, описаны максимально подробно.
+                        p Безусловно, разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение распределения внутренних резервов и ресурсов. Следует отметить, что существующая теория предполагает независимые способы реализации системы массового участия. В рамках спецификации современных стандартов, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Для современного мира высокотехнологичная концепция общественного уклада однозначно фиксирует необходимость своевременного выполнения сверхзадачи.
+        .project-mockup
+            .project-mockup__container.container.container--short
+                .project-mockup__wrp
+                    .project-mockup__icon
+                        img(src="img/projects/icon.svg" alt="")
+                    h3.project-mockup__title.title-3 Кинотеатр Jazz Cinema
+                    .project-mockup__cover
+                        .project-mockup__items 
+                            .project-mockup__item 
+                                .project-mockup__pic 
+                                    img(src="img/projects/img2.png" alt="mockup")
+                            .project-mockup__item 
+                                .project-mockup__pic 
+                                    img(src="img/projects/img2.png" alt="mockup")
+                            .project-mockup__item 
+                                .project-mockup__pic 
+                                    img(src="img/projects/img2.png" alt="mockup")
+                            .project-mockup__item 
+                                .project-mockup__pic 
+                                    img(src="img/projects/img2.png" alt="mockup")
+                            .project-mockup__item 
+                                .project-mockup__pic 
+                                    img(src="img/projects/img2.png" alt="mockup")
+                            .project-mockup__item 
+                                .project-mockup__pic 
+                                    img(src="img/projects/img2.png" alt="mockup")
+        .app-store
+            .app-store__container.container.container--short 
+                .app-store__items
+                    a.app-store__item(href="javascript:void(0);")
+                        +icon("ic-store-app")
+                    a.app-store__item.app-store__item--gp(href="javascript:void(0);")
+                        +icon("ic-store-gp")
+        .call.call--project
+            .call__container.container.container--short
+                .call__title.title-4 Давайте оставаться на связи 
+                .call__quote 
+                    | Вы можете отправить электронное письмо на почту 
+                    a(href="mailto:mr.nikolay.b@mail.ru") mr.nikolay.b@mail.ru 
+                    | или&nbsp;оставить заявку на обратную связь ниже
+                form.call__form
+                    .call__field 
+                        input(type="text" name="Имя" placeholder="Имя" autocomplete="off")
+                    .call__field 
+                        input(type="text" name="email" placeholder="Email" autocomplete="off")
+                    .call__field 
+                        input(type="text" name="message" placeholder="Сообщение" autocomplete="off")
+                    button.btn.btn--green.btn--w477(type="submit") Отправить

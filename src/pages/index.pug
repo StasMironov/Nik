@@ -1,0 +1,135 @@
+extends common/layout
+
+block content
+  main.main
+        .index
+          #intro.index__intro.header-container.fs
+            header.wrapper.container
+              h1.index__title.title-1 Привет, я - Николай! Мобильный&nbsp;разработчик со&nbsp;стажем более 7 лет.
+              h1.index__title.index__title--mobile.title-1 Привет, я&nbsp;-&nbsp;Николай! Мобильный разработчик со&nbsp;стажем более&nbsp;7 лет.
+              p Создаю приложения для различных платформ и устройств.
+            span.scroll-hint
+              +icon('ic-scroll-arrow')
+          
+          nav
+            ul
+              li
+                a(href="#intro")
+                  span.nav-dot.active
+                  span.nav-label 01
+              li
+                a(href="#slide01")
+                  span.nav-dot
+                  span.nav-label 02
+              li
+                a(href="#slide02")
+                  span.nav-dot
+                  span.nav-label 03
+              li
+                a(href="#slide03")
+                  span.nav-dot
+                  span.nav-label 04
+              li
+                a(href="#slide04")
+                  span.nav-dot
+                  span.nav-label 05
+              li
+                a(href="#slide05")
+                  span.nav-dot
+                  span.nav-label 06
+
+          .main-container
+            article#slide01.slide.slide--stack.fs
+              include common/header
+              .wrapper.container 
+                .title-2 Стек технологий
+                .slide__info В настоящее время я разрабатываю мобильные приложения на фреймворке Xamarin для кроссплатформенной разработки Android и iOS. Но также, господа, сплочённость команды профессионалов в значительной степени обусловливает важность существующих финансовых и административных условий. Стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, описаны максимально подробно.
+                .stack
+                  .stack__items 
+                    .stack__item
+                      img(src="img/stack/img1.svg" alt="Xcode")
+                    .stack__item
+                      img(src="img/stack/img2.svg" alt="Java")
+                    .stack__item
+                      img(src="img/stack/img3.svg" alt="HTML")
+                    .stack__item
+                      img(src="img/stack/img4.svg" alt="C++")
+              span.scroll-hint
+                +icon('ic-scroll-arrow')
+            article#slide02.slide.slide--project.slide--cinema.fs
+              include common/header
+              .wrapper.container 
+                .slide__grid 
+                  .slide__left
+                    .slide__subtitle Мобильная разработка
+                    .title-3 Кинотеатр Jazz Cinema
+                    .slide__info Элементы политического процесса, вне зависимости от их уровня, должны быть объявлены нарушающими общечеловеческие нормы этики и морали! Вот вам яркий пример современных тенденций - разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации глубокомысленных.
+                    a.link.link--detail(href="project.html")
+                      .link__txt Посмотреть
+                      .link__ic
+                        +icon('ic-link-arrow')
+                  .slide__right
+                    .slide__pic
+                      picture 
+                        source(srcset="img/index/img1.png" media="(min-width: 620px)")
+                        source(srcset="img/index/img1-mobile.png" media="(min-width: 319px)")
+                        img(src="mdn-logo-narrow.png" alt="MDN")
+              span.scroll-hint
+                +icon('ic-scroll-arrow')
+            article#slide03.slide.slide--project.slide--project-fond.fs
+              include common/header
+              .wrapper.container 
+                .slide__grid 
+                  .slide__left
+                    .slide__subtitle Мобильная разработка
+                    .title-3 Морской Фонд
+                    .slide__info Мобильное приложение "Морской Фонд" позволяет иметь доступ к своему личному кабинету с мобильного телефона. Предварительные выводы неутешительны: существующая теория предопределяет высокую востребованность переосмысления внешнеэкономических политик. Не следует, однако, забывать, что высококачественный.
+                    a.link.link--detail(href="project.html")
+                      .link__txt Посмотреть
+                      .link__ic
+                        +icon('ic-link-arrow')
+                  .slide__right
+                    .slide__pic
+                      picture 
+                        source(srcset="img/index/img2.png" media="(min-width: 620px)")
+                        source(srcset="img/index/img2-mobile.png" media="(min-width: 319px)")
+                        img(src="mdn-logo-narrow.png" alt="MDN")
+              span.scroll-hint
+                +icon('ic-scroll-arrow')
+            article#slide04.slide.slide--project.slide--project-school.fs
+              include common/header
+              .wrapper.container 
+                .slide__grid 
+                  .slide__left
+                    .slide__subtitle Мобильная разработка
+                    .title-3 Schoolmaster
+                    .slide__info Приложение "Schoolmaster. Личный кабинет ученика" - это удобный способ быть в курсе событий вашей школы! Здесь вы легко найдете всю информацию по своим занятиям: расписание, домашние задания, оценки, результаты тестов, учебные материалы. Здесь также есть чат группы и чат с преподавателем/менеджером учебного центра.
+                    a.link.link--detail(href="project.html")
+                      .link__txt Посмотреть
+                      .link__ic
+                        +icon('ic-link-arrow')
+                  .slide__right
+                    .slide__pic
+                      picture 
+                        source(srcset="img/index/img3.png" media="(min-width: 620px)")
+                        source(srcset="img/index/img3-mobile.png" media="(min-width: 319px)")
+                        img(src="mdn-logo-narrow.png" alt="MDN")
+              span.scroll-hint
+                +icon('ic-scroll-arrow')
+            article#slide05.slide.slide--call.fs
+              include common/header
+              .wrapper.container 
+                .call
+                  .call__title.title-4 Давайте оставаться на связи 
+                  .call__quote 
+                    | Вы можете отправить электронное письмо на почту 
+                    a(href="mailto:mr.nikolay.b@mail.ru") mr.nikolay.b@mail.ru 
+                    | или&nbsp;оставить заявку на обратную связь ниже
+                  form.call__form
+                    .call__field 
+                      input(type="text" name="Имя" placeholder="Имя")
+                    .call__field 
+                      input(type="text" name="email" placeholder="Email")
+                    .call__field 
+                      input(type="text" name="message" placeholder="Сообщение")
+                    button.btn.btn--green.btn--w477(type="submit") Отправить

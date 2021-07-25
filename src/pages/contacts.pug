@@ -1,0 +1,19 @@
+extends common/layout
+
+block content
+    main.main
+        .contacts
+            .contacts__container.container.container--short
+                h1.contacts__title.title-1 Контакты
+                .contacts__items
+                    .contacts__item
+                        .contacts__subtitle Email
+                        .contacts__txt mr.nikolay.b@mail.ru
+                    .contacts__item
+                        .contacts__subtitle Skype
+                        .contacts__txt live:dmc66609
+                    .contacts__item
+                        .contacts__subtitle Телефон
+                        .contacts__txt +7 (951) 255-41-94
+                .contacts__quote В частности, внедрение современных методик играет определяющее значение для анализа существующих паттернов поведения. Современные технологии достигли такого уровня, что существующая теория создаёт предпосылки для новых предложений!
+                include common/call

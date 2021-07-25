@@ -1,0 +1,39 @@
+.link {
+    &:hover {
+        color: $green-1;
+    }
+
+    &--detail {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            .link {
+                &__ic {
+                    transform: translateX(5px);
+                }
+            }
+        }
+
+        .link {
+            &__ic {
+                display: flex;
+                width: 23px;
+                height: 10px;
+                transition: .3s ease-in-out;
+
+                .icon {
+                    fill: $green-1;
+                }
+            }
+
+            &__txt {
+                font-size: 14px;
+                line-height: 1;
+                font-weight: 700;
+                margin-right: 10px;
+                color: $green-1;
+            }
+        }
+    }
+}
