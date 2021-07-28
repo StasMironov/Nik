@@ -300,4 +300,76 @@ $(document).ready(() => {
             projectFunc.showOverlay('.js-modal-call', false);
         });
     }
+
+    if($('.js-btn-menu').exists()){
+        try {
+            console.log(1);
+            $('.js-btn-menu').on('click', function(){
+                console.log(1);
+                $(this).toggleClass('open');
+
+                if($(this).hasClass('open')){
+                    playNav('.header__nav', true); 
+                } else {
+                    playNav('.header__nav', false); 
+                }
+            });
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+
+
+    function playNav(bloc, status){
+        console.log(bloc);
+        if($(bloc).exists()){
+            const showNav = new TimelineMax({
+                reversed: true,
+                paused: true,
+                defaults: { duration: 0.5 }
+            });
+
+            const hideNav = new TimelineMax({
+                reversed: true,
+                paused: true,
+                defaults: { duration: 0.5 }
+            });
+
+            hideNav
+                .to(bloc, {
+                    autoAlpha: 0,
+                    xPercent: 100
+                })
+
+            showNav
+                .set(bloc, {
+                    xPercent: 100
+                })
+                .to(bloc, {
+                    autoAlpha: 1,
+                    xPercent:0
+                })
+
+            if(status) {
+                hideNav.reverse();
+                showNav.play();
+                projectFunc.lockedDOM(true);
+            } else {
+                showNav.reverse();
+                hideNav.play();
+                projectFunc.lockedDOM(false);
+            }
+        }
+    }
+
+    // function stateNav(bloc, status){
+    //     if($(bloc).exists()){
+    //         if(status) {
+    //             playNav(bloc, status);
+    //         } else {
+    //             playNav(bloc, status);
+    //         }
+    //     }
+    // }
 })

@@ -30,16 +30,96 @@
         align-items: center;
 
         @media(max-width: 1024px) {
-            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
         }
 
         li {
+            line-height: 1;
+
             &:not(:last-child){
                 margin-right: 35px;
 
                 @media(max-width: 1235px) {
                     margin-right: 25px;
                 }
+
+                @media(max-width: 1024px) {
+                    margin-right: 0;
+                }
+            }
+
+            &:not(:first-child) {
+                @media(max-width: 1024px) {
+                    margin-top: 53px;
+                }
+
+                @media(max-width: 620px) {
+                    margin-top: 51px;
+                }
+            }
+
+            &.active {
+                position: relative;
+
+                @media(max-width: 1024px) {
+                    margin-top: 50px;
+                    margin-bottom: 22px;
+                }
+
+                @media(max-width: 620px) {
+                    margin-top: 47px;
+                    margin-bottom: 21px;
+                }
+    
+                &:after {
+                    background: $green-1;
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 5px;
+                    left: 0;
+                    bottom: -13px;
+                    right: 0;
+                    margin: auto;
+
+                    @media(max-width: 1024px) {
+                        width: 100%;
+                    }
+
+                    @media(max-width: 620px) {
+                        height: 4px;
+                        left: 0;
+                        bottom: -16px;  
+                        width: 100%;                  
+                    }
+                }
+    
+                a {
+                    color: $green-1;
+
+                    @media(max-width: 1024px) {
+                        font-size: 40px;
+                    }
+        
+                    @media(max-width: 620px) {
+                        font-size: 38px;
+                    }
+                }
+            }
+        }
+
+        .link {
+            @media(max-width: 1024px) {
+                font-size: 30px;
+                letter-spacing: 1px;
+                font-weight: 700;
+            }
+
+            @media(max-width: 620px) {
+                font-size: 28px;
             }
         }
     }
@@ -56,15 +136,29 @@
         }
     }
 
-    a {
-        &.active {
-            color: $green-1;
-        }
-    }
-
     .btn {
         @media(max-width: 1024px) {
             display: none;
+        }
+    }
+
+    &__nav {
+        @media(max-width: 1024px) {   
+            position: fixed;
+            background-color: $black-1;
+            height: 100vh;
+            width: 100vw;
+            top: 94px;
+            left: 0;
+            padding: 169px 20px;
+            overflow: scroll;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        @media(max-width: 620px) {
+            top: 69px;
+            padding: 111px 20px;
         }
     }
 }
