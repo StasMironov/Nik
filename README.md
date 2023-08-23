@@ -1,2 +1,2 @@
 # Nik
-nvm use 16.15.1
+node 16.15.1
